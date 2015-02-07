@@ -1,0 +1,70 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+a.button {
+  display: inline-block;
+  padding: 10px 15px 8px 15px;
+  margin: 0 0 5px 5px;
+  vertical-align: bottom;
+  background-color: #3399cc;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+a.button:hover {
+  background-color: #00ccff;
+}
+
+
+form {
+  position: absolute;
+  right: 0;
+  width: 20%;
+  min-width: 400px;
+  top: 0;
+  bottom: 0;
+  overflow: scroll;
+  padding: 1px 10px 15px 10px;
+  background-color: silver;
+  border-radius: 3px;
+  z-index: 99;
+}
+fieldset {
+  padding: 10px;
+}
+label {
+  display: block;
+  padding: 5px 0;
+}
+label span {
+  padding: 2px 5px 0 5px;
+}
+label a {
+  float: right;
+  margin-top: -2px;
+  padding: 2px 5px 0 5px;
+  border-radius: 2px;
+  background-color: #999;
+  color: #ccc;
+  cursor: pointer;
+  transition: background-color .5s, color .5s;
+}
+label a:hover {
+  background-color: #600;
+  color: #fff;
+}
+input {
+  display: block;
+  width: 100%;
+  margin: 5px 0 0 0;
+  padding: 0;
+  border: none;
+}
+input[type=range]::-moz-focus-outer {
+  border:0;
+}
