@@ -70,11 +70,12 @@ class Shape
       #   s1.appendChild make 'appearance', { use:@colorUse }
       # else
       #   log "#{@colorUse} does not exist!"
-    @$shape.appendChild make 'plane', { use:'small-plane' }
+    # @$shape.appendChild make 'plane', { use:'small-plane' }
+    @$shape.appendChild make 'IndexedFaceSet', { use:'tetrahedron-scan' }
 
-    bb = make 'billboard', { axisofrotation:'0 0 0' }
-    bb.appendChild @$shape
-    @t.appendChild bb
+    # bb = make 'billboard', { axisofrotation:'0 0 0' }
+    # bb.appendChild @$shape
+    @t.appendChild @$shape
     s._$container.appendChild @t
 
 
